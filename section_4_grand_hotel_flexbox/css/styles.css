@@ -492,7 +492,7 @@ body {
 .rooms-btn {
     width: 20rem;
     padding: 1.5rem 1rem;
-    margin: 4rem 0;
+    margin: 6rem 0 8rem 0;
     background-color: transparent;
     text-transform: uppercase;
     color: #b85d1c;
@@ -667,23 +667,40 @@ body {
     background-color: #111;
     padding: 0 4rem;
 }
-.copyright-text{
+
+.copyright-text {
     font-size: 1.3rem;
     color: #aaa;
 }
-.text-right{
+
+.text-right {
     font-size: 1.4rem;
     color: #bbb;
 }
 
-.text-right i{
+.text-right i {
     font-size: 2rem;
     margin: .5rem;
     color: tomato;
 }
 
-.text-right span{
-    color: gold;
+.text-right span {
+    color: goldenrod;
 }
 
 /* end footer */
+
+@media (max-width: 1480px) {
+    /* .customers-card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    /* .customer-card:first-child {
+        margin-bottom: 3rem;
+    } */
+
+    .room-card {
+        margin: 3rem;
+    }
+}
