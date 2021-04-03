@@ -90,6 +90,8 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: left .8s cubic-bezier(1, 0, 0, 1);
+
+    z-index: 5;
 }
 
 .navigation-header {
@@ -691,16 +693,367 @@ body {
 /* end footer */
 
 @media (max-width: 1480px) {
-    /* .customers-card-wrapper {
-        flex-direction: column;
-        align-items: center;
-    } */
-
-    /* .customer-card:first-child {
-        margin-bottom: 3rem;
-    } */
-
     .room-card {
         margin: 3rem;
+    }
+}
+
+@media (max-width: 1380px) {
+    .room-card {
+        margin: 2rem;
+        width: 50rem;
+    }
+
+    .customers-card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer-card:first-child {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-us {
+        flex-direction: column;
+        padding-bottom: 20rem;
+    }
+
+    .about-us-content {
+        margin-bottom: 13rem;
+    }
+
+    .image {
+        width: 25rem;
+    }
+
+    .main-part {
+        flex-direction: column;
+    }
+
+    .footer-list {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer-list-item {
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner {
+        text-align: center;
+    }
+
+    .banner-heading {
+        font-size: 4.7rem;
+    }
+
+    .banner-paragraph {
+        font-size: 2.7rem;
+    }
+
+    .banner-button {
+        width: 16rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .customer-card {
+        flex-direction: column;
+        width: 40rem;
+    }
+
+    .customer-image {
+        margin-left: -2rem;
+    }
+
+    .footer-list {
+        display: block;
+    }
+
+    .creator-part {
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .copyright-text {
+        order: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .navigation {
+        width: 28rem;
+    }
+
+    .navigation-heading {
+        font-size: 3rem;
+    }
+
+    .navigation-search-input {
+        width: 20rem;
+    }
+
+    .navigation-search-btn {
+        top: 1.3rem;
+        right: 1rem;
+    }
+
+    .banner {
+        height: 45rem;
+    }
+
+    .about-us-content {
+        padding: 6rem;
+    }
+
+    .image {
+        width: 12rem;
+    }
+
+    .customer-card {
+        width: 25rem;
+    }
+
+    .customer-image {
+        margin-left: -0.8rem;
+        margin-top: -0.8rem;
+    }
+
+    .footer-form {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 3rem 0;
+    }
+
+    .footer-input {
+        border: none;
+        border-radius: .2rem;
+        width: calc(100%);
+    }
+
+    .footer-btn {
+        margin-top: 1rem;
+        border-radius: .2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 5rem;
+    }
+
+    .menu-icon {
+        margin-top: 2rem;
+    }
+
+    .menu-icon:hover .line {
+        width: 1.5rem;
+    }
+
+    .line-1,
+    .line-3 {
+        width: 1.1rem;
+    }
+
+    .checkbox:checked~.navigation {
+        width: 80%;
+        margin-left: 5rem;
+    }
+
+    .social-link {
+        font-size: 1rem;
+    }
+
+    .navigation-search-input {
+        width: 50%;
+    }
+
+    .navigation-search-btn {
+        right: 4rem;
+    }
+
+    .navigation-heading {
+        font-size: 2rem;
+    }
+
+    .header {
+        margin-left: 5rem;
+    }
+
+    .banner-heading {
+        font-size: 3.7rem
+    }
+
+    .banner-paragraph {
+        font-size: 2.4rem;
+    }
+
+    .banner-button {
+        width: 12rem;
+        font-size: 1.2rem;
+    }
+
+    .banner {
+        height: 40rem;
+    }
+
+    .about-us {
+        margin-left: 5rem;
+    }
+
+    .customer-image {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .common-heading {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .small-underline {
+        width: calc(70%);
+    }
+
+    .big-underline {
+        width: calc(100%)
+    }
+
+    .about-us {
+        padding-bottom: 12rem;
+    }
+
+    .about-us-content {
+        padding: 4rem;
+        margin-bottom: 8rem;
+    }
+
+    .about-us-heading {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .about-us-paragraph {
+        font-size: 1.2rem;
+    }
+
+    .about-us-btn {
+        width: 12rem;
+        padding: .8rem .3rem;
+        font-size: 1rem;
+    }
+
+    .sub-heading {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .rooms {
+        margin-left: 5rem;
+    }
+
+    .room-card-heading {
+        font-size: 1.6rem;
+    }
+
+    .room-card-paragraph {
+        font-size: 1.2rem;
+    }
+
+    .room-price {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .room-card-btn {
+        width: 12rem;
+        padding: 1rem .8rem;
+    }
+
+    .rooms-btn {
+        width: 14rem;
+        padding: 1.2rem .8rem;
+        font-size: 1.1rem;
+        margin: 2rem 0 6rem 0;
+    }
+
+    .customers-paragraph {
+        font-size: 1.2rem;
+        width: 80%;
+        margin-top: 0rem;
+    }
+
+    /* .customer-card {
+        width: 16rem;
+    } */
+
+    .image-wrapper {
+        width: 40%;
+    }
+
+    .footer-heading{
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 380px) {
+    .checkbox:checked~.navigation {
+        width: 60%;
+    }
+
+    .navigation-link {
+        font-size: 1.1rem;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .customer-card {
+        width: calc(65%);
+    }
+
+    .customers {
+        margin-left: 5rem;
+    }
+
+    .customer-fullname {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    .customer-paragraph-1 {
+        font-size: 1.1rem;
+    }
+
+    .customer-paragraph-2 {
+        font-size: 1.1rem;
+    }
+
+    .customer-image {
+        width: 100%;
+        margin-left: -0.6rem;
+        margin-top: -0.6rem;
+    }
+
+    .footer {
+        margin-left: 5rem;
+    }
+    .copyright-text{
+        font-size: 1rem;
+    }
+    .creator-part p{
+        font-size: 1.1rem;
     }
 }
