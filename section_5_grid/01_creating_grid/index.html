@@ -10,11 +10,18 @@
     <style>
         .container {
             width: 800px;
+            /* height: 450px; */
             background-color: #ddd;
             margin: 40px auto;
             display: grid;
-            grid-template-rows: 150px 150px;
-            grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 1fr 1fr;
+            /* grid-template-columns: 150px auto auto; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: 3fr 2fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /*repeates 1fr 3times*/
+            /* grid-template-columns: 50% repeat(2, 1fr); */
             /* row-gap: 30px;
             column-gap: 30px; */
             /* gap: 20px 40px; */
@@ -29,14 +36,25 @@
 
         .item-1 {
             background-color: aqua;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
         }
 
         .item-2 {
             background-color: wheat;
+            /* grid-column: 2 / 3;
+            grid-row: 2 / 3; */
+            grid-area: 2 / 2 / 3 / 3;
+            z-index: 10;
         }
 
         .item-3 {
             background-color: rebeccapurple;
+            /* grid-column: 1 / -1; */
+            /* grid-row: 1 / -1; */
+            grid-row: 1 / span 3;
         }
 
         .item-4 {
@@ -49,6 +67,7 @@
 
         .item-6 {
             background-color: teal;
+            grid-column: 2 / span 2;
         }
     </style>
 </head>
