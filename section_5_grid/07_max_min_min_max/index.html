@@ -8,28 +8,28 @@
     <title>Implicit & Explicit Grid</title>
     <style>
         .container {
-            width: 800px;
+            width: 90%;
             background-color: #efefef;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(2, 150px);
-            grid-template-rows: repeat(4, 100px);
+            grid-template-columns: min-content 1fr 1fr minmax(150px, 300px); /*Takes max width of the longest word*/
+            /* grid-template-columns: max-content 1fr 1fr 1fr;  *//*Takes the max width to cover the longest sentense*/
+            grid-template-rows: 150px 150px;
             gap: 1rem;
         }
 
-        .item{
+        .item {
             font-size: 2rem;
             background-color: royalblue;
             color: #fff;
             text-align: center;
         }
-    
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="item">Item 1</div>
+        <div class="item">Item 1 consectetur34343eswdwd adipisicing elit.</div>
         <div class="item">Item 2</div>
         <div class="item ">Item 3</div>
         <div class="item">Item 4</div>
