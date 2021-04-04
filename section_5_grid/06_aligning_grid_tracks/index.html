@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implicit & Explicit Grid</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 600px;
+            background-color: #efefef;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(4, 100px);
+            gap: 1rem;
+            justify-content: space-evenly; /* Aligns grid track horizontally */
+            align-content: center; /* Aligns grid track vertically */
+        }
+
+        .item{
+            font-size: 2rem;
+            background-color: royalblue;
+            color: #fff;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item ">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+    </div>
+</body>
+
+</html>
